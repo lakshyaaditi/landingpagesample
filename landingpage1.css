@@ -26,18 +26,30 @@
 		}
 		.navbar-light .navbar-nav .nav-link {
 			color: black!important;
+			margin-left:55px;
 		}
 		.nav-link{
 			font-size: 20px;
 			text-align: center;
-			margin-left: 55px;
+			/*margin-left: 55px;*/
 			/*color: black;*/
 		}
-		@media only screen and (max-width: 600px){
+
+		/*@media only screen and (min-width: 576){
 			.card{
 				height:400px;
 			}
 		}
+		@media only screen and (min-width: 577){
+			.card{
+				height:400px;
+			}
+		}
+		@media only screen and (min-width: 768){
+			.card{
+				height:400px;
+			}
+		}*/
 		@media only screen and (min-width: 600px){
 			.col-lg-3{
 				height:332px;
@@ -57,22 +69,33 @@
 
 }
 .navbar-default{
-	background: #2c3e50;
+	background: #191970;
 
 }
 .navbar-brand{
 	color: white;
+	font-size: 25px;
 	font-weight: bold;
 	float: left;
 }
 .nav-link{
    color: white;
-   padding-left: 0px;
-   padding-right:0px;
-   margin-left:0px;
-   margin-right:0px;
+   font-size: 25px;
+   float: left;
+  /* margin-left: 0px;*/
 }
+.side{
+	margin-left: 0px!important;
+}
+.navbar-brand {
 
+    margin-left: 10px;
+}
+.navbar-right
+{
+	float: right;
+	margin-right: 20px;
+}
  ul a:hover
 {
 	background color: #fff;
@@ -93,7 +116,7 @@ p{
 	font-size: 18px;
 }
 i{
-	font-size: 10px;
+	font-size: 100px;
 	color:#2196f3eb;
 }
 /*h5{
@@ -116,6 +139,7 @@ h6{
 
 .card{
 			height:300px;
+			/*width:17rem;*/
 		}
 
 		.card{
@@ -147,10 +171,33 @@ h6{
 				height:400px;
 			}
 		}
+		@media only screen and (min-width:774px)and (max-width: 998px){
+			.card{
+				/*width:14rem;*/
+				height:630px;
+			}
+		}
 		@media only screen and (min-width: 600px){
 			.col-lg-3{
 				height:332px;
 			}
+
+
+		}
+
+		@media only screen and  (max-width: 450px){
+			.nav-link{
+				font-size: 33px;
+			}
+			.cont{
+				margin-left: 15px
+			}
+			.navbar-brand{
+				margin-left: 15px;
+			}
+
+
+
 
 		}
 		.carousel-indicators li{
@@ -167,9 +214,7 @@ h6{
     color: #2196f3eb;
     border-color:#2196f3eb;
     border: 4px solid #2196f3eb;
-
 }
-
 .btn-outline-primary:hover {
     color: #fff;
     background-color: #2196f3eb;
@@ -191,7 +236,6 @@ h6{
     height: 250px;
     padding:20px;
 }
-
 */
 .circle {
 /*  height: 150px;
