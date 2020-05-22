@@ -188,14 +188,32 @@
 
 
 <body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <a class="navbar-brand " href="#">Logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <div class="formgroup" >
+				<input type="text" class="cont form-control mt-4" placeholder="Search">
+			</div>
+      <a class="nav-item nav-link side mt-4 " href="#" data-toggle="modal" data-target="#exampleModalCenter">Contact</a>
+      <a class="nav-item nav-link side mt-4 " href="#">Sign Up</a>
+      <a class="nav-item nav-link side mt-4 " href="#">Sign In</a>
+    </div>
+  </div>
+</nav>
 
-	<nav class="navbar navbar-default">
+	<!-- <nav class="navbar navbar-default">
 		<ul class="navbar navbar-left">
 			<a class="navbar-brand" href="#">Logo</a>
-			<!-- <a class="nav-link" href="#">Online Videos</a>
-			<a class="nav-link" href="#">Live classes</a> -->
-		</ul>
 
+		</ul>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		<ul class="navbar navbar-right">
 			<div class="formgroup">
 				<input type="text" class="form-control cont" placeholder="Search">
@@ -204,7 +222,8 @@
 			<a class="nav-link side" href="#">Sign Up</a>
 			<a class="nav-link side" href="#">Sign In</a>
 		</ul>
-	</nav>
+		</div>
+	</nav> -->
 
 	<!-- Modal -->
 	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -218,31 +237,31 @@
 				</div>
 				<div class="modal-body">
 					<form>
-						<div class="form-group cont">
+						<div class="form-group">
 							<label for="username" class="col-form-label">Name:</label>
 							<input type="text" class="form-control" id="name" autocomplete="off">
 						</div>
 
-						<div class="form-group cont">
+						<div class="form-group">
 							<label for="mail" class="col-form-label">E-Mail:</label>
 							<input type="text" class="form-control" id="email" autocomplete="off">
 						</div>
-						<div class="form-group cont">
+						<div class="form-group">
 							<label for="contact" class="col-form-label">Contact No</label>
 							<input type="text" class="form-control" id="Contact No" autocomplete="off">
 						</div>
-						<div class="form-check form-check-inline cont">
+						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
 							<label class="form-check-label" for="inlineRadio1">Male</label>
 						</div>
-						<div class="form-check form-check-inline cont">
+						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
 							<label class="form-check-label" for="inlineRadio2">Female</label>
 						</div>
 
 
 
-						<div class="form-group cont">
+						<div class="form-group">
 							<label for="add" class="col-form-label">Address:</label>
 							<textarea class="form-control" id="address" autocomplete="off"></textarea>
 						</div>
@@ -285,19 +304,19 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item active">
-						<a class="nav-link" href='javascript:void();' id='cat1' onclick='change(this.id);'style="">Data Science<span class="sr-only">(current)</span></a>
+						<a class="nav-link" href='javascript:void();' id='cat1' onclick='change(this.id);'style="font-size:18px!important">Data Science<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href='javascript:void();' id='cat2' onclick='change(this.id);'>Buisness</a>
+						<a class="nav-link" href='javascript:void();' id='cat2' onclick='change(this.id);'style="font-size:18px!important">Buisness</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href='javascript:void();' id='cat3' onclick='change(this.id);'>Marketing</a>
+						<a class="nav-link" href='javascript:void();' id='cat3' onclick='change(this.id);'style="font-size:18px!important">Marketing</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link " href='javascript:void();' id='cat4' onclick='change(this.id);'>Designing</a>
+						<a class="nav-link " href='javascript:void();' id='cat4' onclick='change(this.id);' style="font-size:18px!important">Designing</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href='javascript:void();' id='cat5' onclick='change(this.id);'>Soft Skills</a>
+						<a class="nav-link" href='javascript:void();' id='cat5' onclick='change(this.id);'style="font-size:18px!important">Soft Skills</a>
 					</li>
       <!-- <li class="nav-item">
         <a class="nav-link" href="#" id='cat6' onclick='change(this.id);'>Language</a>
@@ -674,10 +693,3 @@
 																								<h3> Community </h3>
 																								<br><br>
 																								<p> <a href='#' style="color:white">Trainers<a/></p>
-																									<p> <a href='#'style="color:white">Campus<a/></p>
-																										<p> <a href='#'style="color:white">Corporate<a/></p>
-																											<p> <a href='#'style="color:white">Business Partners<a/></p>
-																											</div>
-																										</div>
-																										<br> <br>
-																									</div>
