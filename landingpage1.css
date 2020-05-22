@@ -69,26 +69,26 @@
 
 }
 .navbar-default{
-	background: #191970;
+	background:#2F4F4F;
 
 }
 .navbar-brand{
 	color: white;
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: bold;
 	float: left;
 }
 .nav-link{
    color: white;
-   font-size: 25px;
+   font-size: 5px;
    float: left;
   /* margin-left: 0px;*/
 }
 .side{
 	margin-left: 0px!important;
+  padding:5px;
 }
 .navbar-brand {
-
     margin-left: 10px;
 }
 .navbar-right
@@ -106,7 +106,7 @@
 #carouselExampleIndicators .carousel-inner .carousel-item{
 	margin-top: 0px;
 	height: 400px;
-	background-image: url(img/kk.gif);
+	background-image: url(img/slide3.gif);
 	background-size: 600px;
 	background-position: absolute;
 }
@@ -273,8 +273,9 @@ h6{
   .ii
   {
   text-align: center;
-  background-image: url("img/join.jpg");
-  background-size: 900px;
+  background-image: url("img/motto.png");
+  background-size: 99% 99%;
+  background-repeat: no-repeat;
   }
 
   .jj
