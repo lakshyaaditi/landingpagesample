@@ -170,6 +170,9 @@ h6{
 			.card{
 				height:400px;
 			}
+			.nav-item>.nav-link{
+				margin-left: 0px!important
+			}
 		}
 		@media only screen and (min-width:774px)and (max-width: 998px){
 			.card{
@@ -184,8 +187,28 @@ h6{
 
 
 		}
+		@media (min-width: 992px){
+			.cont{
+				margin-left: 700px!important;
+				width:200px!important;
+			}
+		}
+		/*@media (min-width: 992px){
+           .navbar-expand-lg .navbar-nav {
+		*/
+    /*-ms-flex-direction: row;
+    flex-direction: row;*/
+   /* margin-left: 850px;*/
+    /*margin-right: 20px;*/
+    /*padding: 8px;*/
+/*}
+*/.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: 1.5rem;
+}
+}
 
-		@media only screen and  (max-width: 450px){
+		/*@media only screen and  (max-width: 450px){
 			.nav-link{
 				font-size: 33px;
 			}
@@ -196,10 +219,7 @@ h6{
 				margin-left: 15px;
 			}
 
-
-
-
-		}
+		}*/
 		.carousel-indicators li{
 			display: none
 		}
