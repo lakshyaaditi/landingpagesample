@@ -139,8 +139,10 @@ font-size:5px;
 }
 .link{
   color:black!important;
+  padding:0px;
+  padding-right: 1.5rem!important;
 }
-.link:active{
+.link:hover{
   border-bottom: 2px solid blue!important;
 
     }
