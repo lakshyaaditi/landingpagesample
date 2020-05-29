@@ -18,7 +18,7 @@ color:black;
   min-height: 250px;
 
   border-radius: 10px;
-  border:8px solid black;
+  border:2px solid black;
 }
 .label{
   color: white;
@@ -140,11 +140,13 @@ font-size:5px;
 .link{
   color:black!important;
 }
-.link:hover{
+.link:active{
   border-bottom: 2px solid blue!important;
+
     }
+
 .nav-link{
-  font-size: 20px;
+  font-size: 19px;
   text-align: center;
   margin-left: 55px;
   /*color: black;*/
