@@ -126,7 +126,7 @@ color:#2196f3eb;
 font-size:5px;
 }
 .card1{
-  height:230px;
+  height:190px;
 }
 
 .card1{
@@ -140,7 +140,7 @@ font-size:5px;
 .link{
   color:black!important;
   padding:0px;
-  padding-right: 1.5rem!important;
+  padding-right: 0.5rem!important;
 }
 .link:hover{
   border-bottom: 2px solid blue!important;
