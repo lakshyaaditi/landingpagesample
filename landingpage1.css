@@ -110,6 +110,7 @@ background-image: url(img/LandingSectionre.png);
 background-size: 700px;
 background-position: fixed;
 background-repeat: no-repeat;
+padding:10px;
 }
 
 .carousel-indicators li{
