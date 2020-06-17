@@ -20,7 +20,19 @@
 	<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous'></script>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <script type='text/javascript' src="javascript/categories.js"></script>
+<script>
+  function check_phone(phno){
+    var regex = /^\(?\d{3}\)?-?\s*-?\d{4}$/;
+    if(regex.test(phno.yourphone.value)){
 
+   return true;
+    }
+    else{
+      alert("This is not a valid phone number");
+      return false;
+  }
+  }
+</script>
 
 <style type="text/css">
 body {
@@ -143,7 +155,7 @@ border-top: 1px solid black;
 			</li>
 			<li class="nav-item">
 				<a class="nav-link text-center" style="color:#42AD75;
-	font-size: 18px;font-style: Raleway;
+	font-size: 18px;font-style: 'Raleway';
 	float: left;margin-left: 25px;" href="#" data-toggle="modal" data-target="#exampl">FREE Content</a>
 			</li>
 
@@ -152,8 +164,8 @@ border-top: 1px solid black;
 		<form class="form-inline my-0 my-lg-0">
 			<input class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search" style="margin-left:100px">
 			</form>
-			<li class="nav-item text-center">
-				<a class="nav-link" style="color:#42AD75;
+			<li class="nav-item">
+				<a class="nav-link text-center" style="color:#42AD75;
 	font-size: 18px;font-family: 'Raleway';
 	float: left;margin-left: 15px;" href="#"  data-toggle="modal" data-target="#exampleModal">Login</a>
 			</li>
@@ -246,6 +258,7 @@ border-top: 1px solid black;
 <center><div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
 	<div class="modal-content" style="background-color: white">
+			<form >
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-left: 350px;outline: none">
 				<span aria-hidden="true">&times;</span>
 			</button>
@@ -256,10 +269,10 @@ border-top: 1px solid black;
 	<p class="mt-5"><img src="img/line2.png">&nbsp;<b>OR</b>&nbsp;<img src="img/line2.png"></p>
 
 	<!-- <label for="exampleInputPassword1">Phone</label> -->
-	<center><input type="text" class="form-control inp1 mt-3" id="emailorphone" placeholder="Enter your email id/mobile no" style="outline:none" ></center>
+	<center><input type="email" class="form-control inp1 mt-3" id="emailorphone" placeholder="Enter your email id" style="outline:none" ></center>
 
 	<center><button type="submit" class="btn  mt-5 mb-4" style="background-image:  linear-gradient(to right, rgba(240,240,240), rgba(0, 128, 255));color: white;width:90%;padding: 10px;font-weight: 800;font-size: 18px;">Continue</button></center>
-
+</form
 	</div>
 </div>
 </div>
@@ -771,9 +784,16 @@ border-top: 1px solid black;
 					<h1 style="color:white;font-size:37px;font-family:'Raleway';"> Request for a free </h1>
 					<h1 style="color:white;font-size:37px;font-family:'Raleway';"> online counselling </h1>
 
-							 <input id="phone" type="tel" value="+91" placeholder="Phone Number" style="height:42px;border-color:#89C2F3;background-color:#89C2F3;width:280px;padding:10px">
+<form name="formvalidate" action="form_process.php"
+ method="post" onSubmit="return check_phone(this)" >
+
+<input type="text" class="input"  placeholder="+91"  name="yourphone" style="height:42px;border-color:#89C2F3;background-color:#89C2F3;width:280px;padding:10px" >
 <br>
-<button type="button" class="btn btn-lg btn-primary" style="height:42px;background-color:#3386CE;width:180px;margin:5px 50px;vertical-align:middle; display: inline-block;border-radius:30px;font-family:'Raleway';font-size:25px;text-align:center">Submit</button>
+
+<button type="submit" class="btn btn-lg btn-primary" style="height:42px;background-color:#3386CE;width:180px;margin:5px 50px;vertical-align:middle; display: inline-block;border-radius:30px;font-family:'Raleway';font-size:25px;text-align:center">Submit</button>
+</form>
+
+
 
 						</div>
 						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
