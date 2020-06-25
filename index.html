@@ -8,6 +8,7 @@
 	<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous'>
 
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<!-- <link rel="stylesheet" type="text/css" href="landing1 page.css"> -->
 
 	<link rel='stylesheet' type='text/css' href='landingpage1.css'>
@@ -109,34 +110,27 @@ margin-right: 30px;
 margin-left:10px!important;
 }
 }
-/*p:before {
-content: "";
-display: inline-block;
-height: 1.5em;
 
-width: 25%;
-margin-right: 0%;
-margin-left: 0px;
-margin-top: 10px;
-border-top: 1px solid black;
+@media only screen and (max-width: 1080px){
+#request{
+  align-items: center;
+  justify-content: center;
+  text-align:center;
 }
-p:after {
-content: "";
-display: inline-block;
-height: 1.5em;
+}
+}
 
-width: 25%;
-margin-right: 0%;
-margin-left: 0px;
-margin-top: 10px;
-border-top: 1px solid black;
-}*/
-/* select>option:hover
-{
-		background-color: #1B517E;
-		cursor: pointer;
-		font-size: 50px;
-} */
+@media only screen and (max-width: 1080px){
+#slide{
+  display:inline;
+  align-content: center;
+}
+}
+@media only screen and (max-width: 1080px){
+#footer{
+  text-align: center;
+}
+}
 </style>
 </head>
 
@@ -219,10 +213,7 @@ border-top: 1px solid black;
 	<!-- <label for="exampleInputPassword1">Phone</label> -->
 	<input type="text" class="form-control" value="" id="phone1" placeholder="+91">
 	</div>
-	<div class="form-group">
-
-	<input type="text" class="form-control" value="" id="city1" placeholder="City">
-	</div>
+	
 	<div class="form-group">
 
 	<input type="password" class="form-control" value="" id="pass1" placeholder="Password">
@@ -232,25 +223,12 @@ border-top: 1px solid black;
 	<input type="password" class="form-control" value="" id="cpass" placeholder="Confirm Password">
 	</div>
 
-	<select class="custom-select decorated" id="inputGroupSelect01" placeholder="Courses">
-	<option value="0">Courses</option>
-	<option value="1">Data Science</option>
-	<option value="2">Buisness</option>
-	<option value="3">Web Designing</option>
-	<option value="3">Development</option>
-	<option value="3">Photography</option>
-
-
-	</select>
-
-	<!--  <div class="form-group form-check">
+	<!--<select class="custom-select decorated" id="inputGroupSelect01" placeholder="Courses">
 	<input type="checkbox" class="form-check-input" id="exampleCheck1">
 	<label class="form-check-label" for="exampleCheck1">I accept all the<span style="color:#007bff">&nbsp;Terms&nbsp;</span>&nbsp;and&nbsp;<span style="color:#007bff">Privacy Policies</span></label>
 	</div> -->
 	<button type="submit" class="btn mt-4" style="width: 100%;background: linear-gradient(to right, rgba(240,240,240), rgba(0, 128, 255));color: white;
-	font-weight: 800;font-size: 18px;">Register Now</button>
-
-	<p class="hint mt-4">By clicking on register now you agree to our terms and conditions</p>
+	font-weight: 800;font-size: 18px;" data-toggle="modal" data-target="#examp2" class="close" data-dismiss="modal" aria-label="Close" >Next</button>
 
 	</form>
 	</div>
@@ -260,7 +238,71 @@ border-top: 1px solid black;
 </center>
 <!-- Button trigger modal -->
 <center>
+	<div class="modal fade" href="#" id="examp2" data-dismiss="modal" data-target="#examp1" tabindex="-1" role="dialog" aria-labelledby="exampl" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content">
+		<div class="signup-form">
+		<form >
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+		</button>
+		<h2 class="head mb-4">Are you a</h2>
 
+		<input type="radio" >
+		<label for="student">Student</label><br>
+		<input type="radio">
+		<label for="jobseeker">Jobseeker</label><br>
+		<input type="radio">
+		<label for="professional">Working Professional</label><br>
+		<input type="radio">
+		<label for="facilitator">Facilitator/Trainer</label><br>
+		<input type="radio">
+		<label for="freelancer">Solopreneur/Freelancer</label><br>
+		<input type="radio">
+		<label for="entrepreneur">Entrepreneur/Business Owner</label><br>
+		<input type="radio" id="other">
+		<label for="other">Other</label>
+			<button type="submit" class="btn mt-4" style="width: 100%;background: linear-gradient(to right, rgba(240,240,240), rgba(0, 128, 255));color: white;
+			font-weight: 800;font-size: 18px;" data-toggle="modal" data-target="#examp3" class="close" data-dismiss="modal" >Next</button>
+		
+		</form>
+		</div>
+		</div>
+		</div>
+		</div>
+</center>
+
+<center>
+<div class="modal fade" href="#" id="examp3" tabindex="-1" role="dialog" aria-labelledby="exampl" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	<div class="modal-content">
+	<div class="signup-form">
+	<form >
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button>
+			<h2 class="head mb-4" >Course Categories</h2>
+					  <ul style="text-align:left;font-size:15px">
+					 		 <input type="checkbox" class="check"><label>Arts and Humanities</label><br>
+						        <input type="checkbox" class="check"> <label>Marketing/Business</label><br>
+							  <input type="checkbox" class="check"> <label>Computer Science</label><br>
+							  <input type="checkbox" class="check"> <label>Data Science</label><br>
+							  <input type="checkbox" class="check"> <label>Information Technology</label><br>
+							  <input type="checkbox" class="check"> <label>Math and Logic</label><br>
+							  <input type="checkbox" class="check"> <label>Solopreneurship</label><br>
+							  <input type="checkbox" class="check"> <label>Personal Development</label><br>
+							  <input type="checkbox" class="check"> <label>Social Sciences</label><br>
+							  <input type="checkbox" class="check"> <label>Language Learning</label>
+							</ul>		
+							  
+		<button type="submit" class="btn mt-4" style="width: 100%;background: linear-gradient(to right, rgba(240,240,240), rgba(0, 128, 255));color: white;
+		font-weight: 800;font-size: 18px; ">Register</button>
+			<p class="hint mt-1" style="font-size:0.6em">By clicking on register now you agree to our terms and conditions</p>
+		</form>
+	</div>
+	</div>
+	</div>
+	</div>
 </center>
 <!-- Modal -->
 <center><div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -288,8 +330,9 @@ border-top: 1px solid black;
 	<div class="container-fluid">
 		<div class="row" >
 			<div class="col-lg-6" id="slide">
+			<center>	<img style="height:450px;width:650px" src="img/LandingSectionre.png"></center>
 					</div>
-					<div class="col-lg-5">
+					<div class="col-lg-6">
 						<br> <br> <br> <br>
 							<center>	<h1 style="color:black;font-size:37px"><span style="color:blue">Live</span> Classes & <span style="color:blue">Recorded</span> Videos </h1></center>
 						<center>	<h1 style="color:black;font-size:37px">for your Careerhood</h1> </center>
@@ -312,7 +355,7 @@ border-top: 1px solid black;
 		<nav class="navbar navbar-expand-lg navbar-light bg-light" >
 			<!--  <a class="navbar-brand" href="#">Navbar</a> -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: -5px;border:2px solid black">
-				<span><i class="fa fa-bars" aria-hidden="true" style="color: black;"> </i></span>
+				<span><i class="fa fa-bars" aria-hidden="true" style="color: black;font-size: 18px;"> </i></span>
 
 			</button>
 			<div class=" nav1 collapse navbar-collapse" id="navbarNav" >
@@ -788,88 +831,63 @@ border-top: 1px solid black;
 
 <div class="container-fluid">
 							<div class="row" style="background-color:#3791DF;background-size:cover">
-								<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" style="background-size:1400px;padding:30px">
-					<h1 style="color:white;font-size:35px;font-family:'Raleway';"> Request for a free </h1>
-					<h1 style="color:white;font-size:35px;font-family:'Raleway';"> online counselling </h1>
+								<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" id="request" style="background-size:1400px;padding:30px">
+					<h1 style="color:white;font-size:32px;font-family:'Raleway';padding-left:15px"> Request for a free </h1>
+					<h1 style="color:white;font-size:32px;font-family:'Raleway';padding-left:15px"> online counselling </h1>
 
 <form name="formvalidate" action="form_process.php"
- method="post" onSubmit="return check_phone(this)" >
+ method="post" style="padding-left:15px" onSubmit="return check_phone(this)" >
 
-<input type="text" class="input"  placeholder="+91"  name="yourphone" style="height:42px;border-color:#89C2F3;background-color:#89C2F3;width:260px;padding:10px" >
+<input type="text" class="input"  placeholder="+91"  name="yourphone" style="height:42px;border-radius:5px;padding-left:18px;border-color:#89C2F3;background-color:#89C2F3;width:230px;" >
 <br>
 
-<button type="submit" class="btn btn-lg btn-primary" style="height:40px;background-color:#3386CE;width:160px;margin:5px 50px;vertical-align:middle; display: inline-block;border-radius:30px;font-family:'Raleway';font-size:23px;text-align:center">Submit</button>
+<button type="submit" class="btn btn-lg btn-primary" style="height:40px;background-color:#3386CE;width:140px;margin:5px 45px;vertical-align:middle; display: inline-block;border-radius:30px;font-family:'Raleway';font-size:23px;text-align:center">Submit</button>
 </form>
+</div>
+						
 
-
-
-						</div>
-						<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
 					 <center><img src=img/customer.png  class="img-fluid"style="width:330px;height:270px"></center>
 						</div>
 				</div>
 			</div>
 
-			<div class="container-fluid" style="background-color:#E7E9FA">
-				<div class="row" style="text-align:left;font-family:'Raleway';background-color:#E7E9FA;padding:10px"background-size:100% 100%">
-					<div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2" id="footer" >
-						<br> <br> <br>
-						<h5 style="color:black;font-weight:bold;font-family:'Raleway'"> Courses </h5>
-						<br>
-						<li> <a href='#' style="color:black;font-size:17px">Regular courses<a/></li>
-							<li> <a href='#' style="color:black;font-size:17px">Live classes<a/></li>
-								<li> <a href='#' style="color:black;font-size:17px">Short term courses<a/></li>
-									<li> <a href='#' style="color:black;font-size:17px">Workshops<a/></li>
-									</div>
-									<div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2" id="footer">
-										<br> <br> <br>
-										<h5 style="color:black;font-weight:bold;font-family:'Raleway'"> Company </h5>
-										<br>
-										<li> <a href='#' style="color:black;font-size:17px">About Us<a/></li>
-											<li> <a href='#' style="color:black;font-size:17px">Our Team<a/></li>
-												<li> <a href='#' style="color:black;font-size:17px">FAQs<a/></li>
-													<li> <a href='#'style="color:black;font-size:17px">Partners<a/></li>
-														<li> <a href='#' style="color:black;font-size:17px">Blog<a/></li>
-															<li> <a href='#' style="color:black;font-size:17px">Terms and Conditions<a/></li>
-																<li> <a href='#' style="color:black;font-size:17px">Privacy<a/></li>
-																	<li> <a href='#' style="color:black;font-size:17px">Help and Support<a/></li>
-																		<li> <a href='#'style="color:black;font-size:17px">Articles<a/></li>
-																		</div>
-																		<div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2" id="footer">
-																			<br> <br> <br>
-																			<h5 style="color:black;font-weight:bold;font-family:'Raleway'"> Community </h5>
-																			<br>
-																			<li> <a href='#' style="color:black;font-size:17px">Trainers<a/></li>
-<li> <a href='#' style="color:black;font-size:17px">Campus<a/></li>
-<li> <a href='#' style="color:black;font-size:17px">Corporates<a/></li>
-<li> <a href='#' style="color:black;font-size:17px">Business Partners<a/></li>
-</div>
-	<div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2" id="footer">
-		<br> <br> <br>
-<h5 style="color:black;font-weight:bold;font-family:'Raleway'">Social</h5>
-<br>
- <a href='#'> <img src=img/logos.png style="width:30px;height:30px"><a/>
-<a href='#'> <img src=img/logotype.png style="width:30px;height:30px"><a/>
-<a href='#'> <img src=img/youtube.jpg style="width:30px;height:30px"><a/>
-	<li>
-<a href='#'> <img src=img/linkedin.png style="width:30px;height:30px"><a/>
-<a href='#'> <img src=img/wordpress.png style="width:30px;height:30px"><a/></li>
-	<br>
-<h5 style="color:black;font-weight:bold;font-family:'Raleway'">Mobile App</h5>
-	<img src=img/android.png style="height:55px; width:40px">
-		<img src=img/ios.png style="height:60px; width:40px">
- </div>
-	<div class="col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1" id="footer">
-	</div>
-		<div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3" id="footer">
-			<br>
-		<img src=img/internship3.png style="height:400px; width:290px; opacity:0.7">
-	</div>
-	<br>
-</div>
-<h6 style="font-family:'Raleway';background-color:#E7E9FA;color:#3DB4EC"><img src=img/logotiny.png style="width:34px;height:30px">TMHM Company (c)2020.All rights reserved.</h6>
- </div>
+		<center>	<div class="container-fluid">
+			<br>	<div class="row" style="text-align:left;font-family:'Raleway';padding:10px;background-size:100% 100%">
+					<div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3" id="footer" style="padding-left:30px">
+						<h4 style="font-family:'Raleway';"><img src=img/logotiny.png
+							style="width:34px;height:30px">Digital TMHM </h4> <br>
+							 <a href='#'> <img src=img/logos.png style="width:30px;height:30px;padding:3px"><a/>
+							 <a href='#'> <img src=img/logotype.png style="width:30px;height:30px;padding:3px"><a/>
+							 <a href='#'> <img src=img/youtube.jpg style="width:30px;height:30px;"><a/>
+							 <a href='#'> <img src=img/linkedin.png style="width:30px;height:30px;padding:3px"><a/>
+							 <a href='#'> <img src=img/wordpress.png style="width:30px;height:30px;padding:3px"><a/>
+							 <br>
+	                       <h6 style="font-family:'Raleway';">TMHM Company Pvt Ltd</h6>
+                    </div>
 
+					<div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3" id="footer"  style="padding-left:30px">
+						<li> <a href='#' style="color:black;font-size:17px">About Us<a/></li>
+						<li> <a href='#' style="color:black;font-size:17px">Internships<a/></li>
+						<li> <a href='#' style="color:black;font-size:17px">Blog/Articles<a/></li>
+						<li> <a href='#' style="color:black;font-size:17px">Terms/Privacy<a/></li>
+		
+					</div>
+
+                    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3" id="footer"  style="padding-left:20px">
+                    <li> <a href='#' style="color:black;font-size:17px">Learners<a/></li>
+                    <li> <a href='#' style="color:black;font-size:17px">Facilitators<a/></li>
+                    <li> <a href='#' style="color:black;font-size:17px">Campus<a/></li>
+                    <li> <a href='#' style="color:black;font-size:17px">Corporates<a/></li>
+					</div>
+					
+                    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3" id="footer"  style="padding-left:20px">
+						<li> <a style="color:black;font-size:17px">Mobile App<a/></li>
+							<a href='#'><img src=img/apple.png style="height:100px; width:150px"></a>
+                    </div>
+</div>
+<br>
+</div> </center>
 <script type="text/javascript" src="jquey.min.js"></script>
 <script type="text/javascript" src="owl.carousel.js"></script>
 <script type="text/javascript">
