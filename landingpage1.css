@@ -100,12 +100,17 @@ margin:10px;
 .side{
 margin-left: 0px!important;
 padding:5px;
+
 }
 
 
 
 #slide{
 margin-top: 10px;
+background-image:url("img/LandingSectionre.png");
+background-repeat: none;
+background-size: 100% 100%;
+background-position: absolute;
 }
 
 .carousel-indicators li{
